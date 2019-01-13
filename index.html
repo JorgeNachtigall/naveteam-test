@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <h1>POSTS</h1></br>
+        <div class="start-screen">
+            <input type="number" id="id" min="1" placeholder="Enter your ID" oninput="validity.valid||(value='');">
+            <input type="submit" class="post-btn1" onclick="firstRequest()" value="Confirm">
+            <p>Enter your ID to see, create and delete your posts or just click CONFIRM to see all posts.</p>
+        </div>
+        <div class="post-input">
+            <p>Title: </p><input type="text" class="post-title" id="title">
+            <textarea placeholder="Tell us more..." id="text"></textarea>
+            <input type="submit" class="post-btn" onclick="postRequest()" value="POST IT!">
+        </div>
+        <input type="number" id="delete-post" min="1" placeholder="Enter the post ID" oninput="validity.valid||(value='');">
+        <input type="submit" class="post-btn" onclick="deleteRequest()" value="Delete">
+    </div>
+</body>
+
+</html>
